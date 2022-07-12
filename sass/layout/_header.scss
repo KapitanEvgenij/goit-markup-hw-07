@@ -1,0 +1,88 @@
+
+/*--------- HEADER STYLES --------- */
+.header {
+    border-bottom: 1px solid #ECECEC;
+
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+.header-logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--logo-dark-color);
+    margin-right: 93px;
+    padding: 24px 0;
+}
+
+.logo-accent {
+    color: var(--accent-color);
+}
+
+.header-link,
+.header-tel,
+.header-email {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--header-nav-color);
+    display: inline-block;
+    padding: 32px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+.header-tel,
+.header-email {
+    color: var(--header-contacts-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heder-mail-icon,
+.heder-tel-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+
+.header-link:hover,
+.header-link:focus,
+.header-tel:hover,
+.header-tel:focus,
+.header-email:hover,
+.header-email:focus {
+    color: var(--accent-color);
+}
+
+
+.header-list,
+.header-contacts-list {
+    display: flex;
+    align-items: center;
+}
+
+.header-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+.header-contacts-list {
+    margin-left: auto;
+}
