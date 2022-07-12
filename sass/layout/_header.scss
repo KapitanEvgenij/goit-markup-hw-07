@@ -2,19 +2,19 @@
 /*--------- HEADER STYLES --------- */
 .header {
     border-bottom: 1px solid #ECECEC;
+    & .container {
+            display: flex;
+            align-items: center;
+        }
 
 }
 
-.header .container {
-    display: flex;
-    align-items: center;
-}
+
 
 .header-nav {
     display: flex;
     align-items: center;
 }
-
 
 .header-logo {
     font-family: 'Raleway';
@@ -42,8 +42,14 @@
     display: inline-block;
     padding: 32px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
+        &:hover,
+        &:focus,
+        &:hover,
+        &:focus,
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
 }
 
 .header-tel,
@@ -62,14 +68,7 @@
 }
 
 
-.header-link:hover,
-.header-link:focus,
-.header-tel:hover,
-.header-tel:focus,
-.header-email:hover,
-.header-email:focus {
-    color: var(--accent-color);
-}
+
 
 
 .header-list,

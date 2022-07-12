@@ -10,11 +10,12 @@
 
 .products-item {
     position: relative;
+    &+& {
+            margin-left: 30px;
+        }
 }
 
-.products-item+.products-item {
-    margin-left: 30px;
-}
+
 
 
 .products-item-title {

@@ -3,6 +3,10 @@
     background-color: var(--main-bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    & .container {
+            display: flex;
+            align-items: baseline;
+        }
 }
 
 .footer-logo {
@@ -14,11 +18,12 @@
     color: var(--logo-light-color);
     margin-bottom: 20px;
     display: inline-block;
+    & span {
+            color: var(--accent-color);
+        }
 }
 
-.footer-logo span {
-    color: var(--accent-color);
-}
+
 
 .address {
     font-style: normal;
@@ -40,27 +45,23 @@
 .footer-tel {
     color: var(--footer-contacts-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus,
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
 }
 
 .footer-address,
 .footer-link {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-address:hover,
-.footer-address:focus,
-.footer-link:hover,
-.footer-link:focus,
-.footer-tel:hover,
-.footer-tel:focus,
-.footer-email:hover,
-.footer-email:focus {
-    color: var(--accent-color);
-}
-
-.footer .container {
-    display: flex;
-    align-items: baseline;
+        &:hover,
+        &:focus,
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
 }
 
 .footer-address-wrap {
@@ -91,11 +92,12 @@
     width: 44px;
     height: 44px;
     margin-left: 10px;
+    &:first-child {
+            margin-left: 0;
+        }
 }
 
-.footer-soc-item:first-child {
-    margin-left: 0;
-}
+
 
 
 .footer-soc-link {
@@ -108,6 +110,11 @@
     color: #FFFFFF;
     background: rgba(255, 255, 255, 0.1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+    
+        }
 
 }
 
@@ -115,11 +122,7 @@
     fill: currentColor;
 }
 
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-    background-color: var(--accent-color);
 
-}
 
 
 .subscribe-form {
@@ -138,6 +141,16 @@
     padding: 15px;
     margin-right: 12px;
     color: rgba(255, 255, 255, 0.6);
+    &::placeholder {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    &:focus {
+        border-color: var(--accent-color)
+    }
 }
 
 .subscribe-btn {
@@ -154,14 +167,5 @@
     margin-left: 10px;
 }
 
-.subscribe-input::placeholder {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
-}
 
-.subscribe-input:focus {
-    border-color: var(--accent-color)
-}
+
