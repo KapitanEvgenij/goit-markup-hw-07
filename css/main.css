@@ -272,6 +272,10 @@ a.active::after {
   justify-content: center;
   outline: transparent;
   padding: 0;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-btn:hover, .modal-close-btn:focus {
+  border-color: var(--accent-color);
 }
 
 .close-btn {
