@@ -8,17 +8,14 @@
     display: flex;
 }
 
-.products-item {
+.products-list__item {
     position: relative;
     &+& {
             margin-left: 30px;
         }
 }
 
-
-
-
-.products-item-title {
+.products-list__item-title {
     display: flex;
     font-style: normal;
     font-weight: 700;
@@ -38,7 +35,7 @@
     justify-content: center;
 }
 
-.products-title {
+.products__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;

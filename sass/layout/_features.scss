@@ -9,14 +9,14 @@
     justify-content: space-between;
 }
 
-.features-item {
+.features-list__item {
     width: 270px;
     &+& {
             margin-left: 30px;
         }
 }
 
-.features-thumb {
+.features-list__thumb {
     height: 120px;
     margin-bottom: 30px;
     display: flex;
@@ -27,10 +27,7 @@
 
 }
 
-
-
-
-.features-subtitle {
+.features-list__subtitle {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -40,7 +37,7 @@
     margin-bottom: 10px;
 }
 
-.features-text {
+.features-list__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;

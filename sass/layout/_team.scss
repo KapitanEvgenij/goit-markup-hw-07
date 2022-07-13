@@ -11,7 +11,7 @@
     margin: -15px;
 }
 
-.team-item {
+.team-list__item {
     flex-basis: calc(100% / 3 - 30px);
     margin: 15px;
 
@@ -23,13 +23,13 @@
 
 }
 
-.team-title-wrap {
+.team-list__title-wrap {
     padding: 30px 0;
 }
 
 
 
-.team-title {
+.team__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -40,7 +40,7 @@
 }
 
 
-.team-subtitle {
+.team-list__subtitle {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -50,7 +50,7 @@
     margin-bottom: 10px;
 }
 
-.team-text {
+.team-list__text {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -63,7 +63,7 @@
     justify-content: center;
 }
 
-.masters-soc-item {
+.masters-soc-list__item {
     width: 44px;
     height: 44px;
     margin-left: 10px;
@@ -72,10 +72,7 @@
         }
 }
 
-
-
-
-.master-soc-link {
+.masters-soc-list__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,7 +89,7 @@
     }
 }
 
-.masters-soc-icon {
+.masters-soc-list__icon {
     fill: currentColor;
 }
 
