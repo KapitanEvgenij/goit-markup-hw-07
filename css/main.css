@@ -70,11 +70,12 @@ body {
   margin: -1px;
 }
 
-a.active {
+.menu__link.active {
   color: var(--accent-color);
   position: relative;
 }
-a.active::after {
+
+.active::after {
   content: "";
   display: block;
   height: 4px;
@@ -315,7 +316,6 @@ a.active::after {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  padding: 24px 0;
 }
 
 .logo--color-dark {
@@ -324,9 +324,10 @@ a.active::after {
 
 .nav__logo {
   margin-right: 93px;
+  padding: 24px 0;
 }
 
-.logo-accent {
+.logo--accent {
   color: var(--accent-color);
 }
 
@@ -660,7 +661,7 @@ a.active::after {
   letter-spacing: 0.03em;
   display: inline-block;
 }
-.logo span {
+.logo .logo--accent {
   color: var(--accent-color);
 }
 
@@ -816,7 +817,8 @@ a.active::after {
 .portfolio-nav .portfolio-item {
   margin-left: 8px;
 }
-.portfolio-nav .portfolio-item:first-child {
+
+.portfolio-item:first-child {
   margin-left: 0;
 }
 

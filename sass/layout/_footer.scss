@@ -17,7 +17,7 @@
     letter-spacing: 0.03em;
     
     display: inline-block;
-    & span {
+    & .logo--accent {
             color: var(--accent-color);
         }
 }

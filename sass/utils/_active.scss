@@ -1,6 +1,12 @@
-a.active {
+.menu__link{
+
+    &.active {
     color: var(--accent-color);
     position: relative;
+    }
+}
+
+.active {
     &::after {
             content: '';
             display: block;
@@ -13,4 +19,3 @@ a.active {
             bottom: 0;
         }
 }
-
